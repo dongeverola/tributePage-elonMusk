@@ -2,22 +2,28 @@
 <html>
     <head>
         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
-<body>
-
     <title> Elon Musk Tribute Page </title>
-
+<body>
 
 <!--NAV BAR SECTION-->
 
-    
+
     <div class="navbar-container">
-        <div class="navbar">
-            <div class="navbar-leftside">
-            <ul>
+
+        <div class="navbar" id="navbar">
+
+                <button class="hamburger" id="hamburger">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+            <ul class="nav-ul" id="nav-ul">
                 <li> <a href="">Home</a></li>
                 <li><a href="#biography-section"> About </a></li>
                 <li><a href="#videos-section"> Videos </a></li>
@@ -37,17 +43,20 @@
 
 
     <div class="main-container">
+
         <div class="photo-section"  data-aos="fade-left"> 
             <img src="elon musk.jpg" alt="elonMuskPhoto">
         </div>
+
         <div class="biography-section"  data-aos="fade-right" id="biography-section">
             <p> Elon Reeve Musk, born in June 28, 1971. Founder, CEO,
                 lead designer of SpaceX. CEO, product architect of Tesla Inc.
             Founder of The Boring Company and X.com. </p>
 
         </div>
+
         <div class="videos-section"  data-aos="fade-left" id="videos-section">
-            <iframe id="emdocumentary" width="500" height="400" src="https://www.youtube.com/embed/i7nZBJVI26A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="emdocumentary" width="400" height="500" src="https://www.youtube.com/embed/i7nZBJVI26A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
         </div>
@@ -58,10 +67,13 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-          offset: 400,
+          offset: 100,
           duration: 1000
       });
     </script>
+    
+    <script src="script.js"></script>
+    
 
 </body>
 </html>
