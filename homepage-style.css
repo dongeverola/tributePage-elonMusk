@@ -1,0 +1,49 @@
+*{ margin:0px;
+padding:0px;}
+
+body {
+
+    background-image: url(bg-image1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.button-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button-container a {
+    padding: 1em 3em;
+    font-size: 30px;
+    background-color: transparent;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid white;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    
+}
+
+.button-container .button:hover{
+    opacity: 0.6;
+}
+
+@media screen only and (max-width: 700px){
+
+
+}
